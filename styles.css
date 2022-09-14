@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "cream";
+    src: url(font/cream/cream-DEMO.ttf);
+}
+
+html {
+    font-size: 18px;
+    font-family: "cream";
+}
+
+body {
+    margin: 0;
+}
+
+.nav-container {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    background-color: #F63E02;
+}
+
+.nav-child {
+    width: 30rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-child a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-child a:hover {
+    color: darkslategrey;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.body-container {
+    margin: 0 2rem;
+}
+
+.events {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 50rem;
+}
+
+.pics1 img {
+    height: 19rem;
+}
+
+.pics1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0 3rem;
+}
+
+.results {
+    color: white;
+    background-color: #F63E02;
+    padding: 1rem 0 8rem;
+}
+
+.pics2 img {
+    height: 19rem;
+}
+
+.pics2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 3rem;
+}
+
+.footer-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #F63E02;
+}
+
+.footer-child {
+    width: 30rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-child a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-child a:hover {
+    color: darkslategrey;
+}
