@@ -3,6 +3,10 @@
     src: url(font/cream/cream-DEMO.ttf);
 }
 
+img {
+    max-width: 100%;
+}
+
 html {
     font-size: 18px;
     font-family: "cream";
@@ -19,7 +23,7 @@ body {
 }
 
 .nav-child {
-    width: 30rem;
+    max-width: 30rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -51,7 +55,7 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    width: 50rem;
+    max-width: 50rem;
 }
 
 .pics1 img {
@@ -81,6 +85,14 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin: 3rem 0 3rem;
+}
+
+.pics3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 3rem 3rem;
 }
 
@@ -91,7 +103,7 @@ body {
 }
 
 .footer-child {
-    width: 30rem;
+    max-width: 30rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -104,4 +116,66 @@ body {
 
 .footer-child a:hover {
     color: darkslategrey;
+}
+
+@media only screen and (min-width:300px) and (max-width: 850px) {
+    
+    .nav-child a {
+        font-size: 1rem;
+    }
+
+    .banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .results h1 {
+        font-size: 1.5rem;   
+    }
+
+    .pics3 h1 {
+        font-size: 1.3rem;
+    }
+
+    .pics3 img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .footer-child a {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    
+    .nav-child {
+        flex-direction: column;
+    }
+
+    .footer-child {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 1544px) {
+
+    .pics1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .pics2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .pics1 img {
+        height: 100%;
+    }
+
+    .pics2 img {
+        height: 100%;
+    }
 }
